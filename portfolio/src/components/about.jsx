@@ -63,45 +63,10 @@ export default class About extends Component {
                 </span>
                 <div className="desc">
                     <h3>Mobile Development</h3>
-                    <p>I have experience in developing mobile applications through the use of Android Studio and React Native.</p>
+                    <p>I have experience in developing mobile applications through the use of Android Studio, React Native and Cordova.</p>
                 </div>
                 </div>
             </div>
-            {/*
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-2">
-                <span className="icon">
-                    <i className="icon-data" />
-                </span>
-                <div className="desc">
-                    <h3>Dev Ops</h3>
-                    <p>Jenkins , Kubernetes , Docker </p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-4">
-                <span className="icon">
-                    <i className="icon-layers2" />
-                </span>
-                <div className="desc">
-                    <h3>Graphic Design</h3>
-                    <p>My friend knows .. P</p>
-                </div>
-                </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-                <div className="services color-6">
-                <span className="icon">
-                    <i className="icon-phone3" />
-                </span>
-                <div className="desc">
-                    <h3>Digital Marketing</h3>
-                    <p>I use Instagram eight hours a day :) </p>
-                </div>
-                </div>
-            </div>
-            */}
             </div>
         </div>
         </section>
