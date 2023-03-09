@@ -11,12 +11,13 @@ export default class About extends Component {
                 <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                 <div className="col-md-12">
                     <div className="about-desc">
-                    <span className="heading-meta">About Us</span>
+                    <span className="heading-meta">About Me</span>
                     <h2 className="colorlib-heading">Who Am I?</h2>
-                    <p>I am a Computer Engineering student at Polytechnic University of Manila.
-                    I am currently on my 3rd year as a student, so now I am starting to build my portfolio and gain experience from companies.</p>
-                    <p>I am also starting to broaden my knowledge of web and software development by taking online classes aside from
-                    my academic work.</p>
+                    <p>I am a Computer Engineering student at Polytechnic University of the Philippines - Manila.
+                    I am currently on my 4th year as a student, and I have completed two internships in different companies.</p>
+                    <p>I have interned as a fullstack system development intern and have experienced working with building and maintaining a HRIS module through the use of Python.</p>
+                    <p>As well as building the frontend component of a website for multiple clients through the use of Quasar Framework.</p>
+                    <p>I have not just gained technical experience from these internships but I have also learned how to work with a team of professional programmers and functional consultants, as well as communicating with these professionals..</p>
                     </div>
                 </div>
                 </div>
