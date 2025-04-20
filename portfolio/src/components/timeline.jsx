@@ -16,40 +16,43 @@ export default class Timeline extends Component {
               <div className="col-md-12">
                 <div className="timeline-centered">
 
-                <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                <article className="timeline-entry animate-box" data-animate-effect="fadeInTop">
                     <div className="timeline-entry-inner">
                       <div className="timeline-icon color-3">
                         <i className="icon-pen2" />
-                      </div>, 
+                      </div>
+                      <div className="timeline-label">
+                        <h2>Graduated at PUP Manila <span>2019-2023</span></h2>
+                        <p>I have graduated from Computer Engineering majoring in System Development in Polytechnic University of Philippines Manila.
+                          I have taken courses such as Enterprise Software Systems, Feedback and Control Systems, Software Design, as well as Data Structures and Algorithms.</p></div>
+                    </div>
+                  </article>
+                  <br/>
+                <article className="timeline-entry animate-box" data-animate-effect="fadeInTop">
+                    <div className="timeline-entry-inner">
+                      <div className="timeline-icon color-1">
+                        <i className="icon-pen2" />
+                      </div>
                       <div className="timeline-label">
                         <h2>Fullstack System Development Intern at Achieve Without Borders Inc.<span>2022</span></h2>
-                        <p>I have interned at Achieve Without Borders Inc. last summer of 2022 as a part of my course practicum. 
+                        <p>I have interned at Achieve Without Borders Inc. last summer of 2022 as a part of my course practicum.
                         There I learned a lot about how professionals work and the industry work environment.</p></div>
                     </div>
                   </article>
+                  <br/>
 
-                  <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                    <div className="timeline-entry-inner">
-                      <div className="timeline-icon color-3">
-                        <i className="icon-pen2" />
-                      </div>, 
-                      <div className="timeline-label">
-                        <h2>System Development Intern at Pixel8 Web Solutions Inc. <span>2021</span></h2>
-                        <p>I have interned at Pixel8 Web Solutions Inc. last summer of 2021 as a part of my course practicum. 
-                        There I learned a lot about how professionals work and the industry work environment.</p></div>
-                    </div>
-                  </article>
                   <article className="timeline-entry animate-box" data-animate-effect="fadeInTop">
                     <div className="timeline-entry-inner">
                       <div className="timeline-icon color-4">
                         <i className="icon-pen2" />
                       </div>
                       <div className="timeline-label">
-                        <h2>Undergraduate at PUP Manila <span>2019-current</span></h2>
-                        <p>I am currently a Computer Engineering student majoring in System Development in Polytechnic University of Philippines Manila.
-                        I have taken courses such as Enterprise Software Systems, Feedback and Control Systems, Software Design, as well as Data Structures and Algorithms.</p></div>
+                        <h2>System Development Intern at Pixel8 Web Solutions Inc. <span>2021</span></h2>
+                        <p>I have interned at Pixel8 Web Solutions Inc. last summer of 2021 as a part of my course practicum.
+                          There I learned a lot about how professionals work and the industry work environment.</p></div>
                     </div>
                   </article>
+                  <br/>                  
                   <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                     <div className="timeline-entry-inner">
                       <div className="timeline-icon color-5">
@@ -57,7 +60,7 @@ export default class Timeline extends Component {
                       </div>
                       <div className="timeline-label">
                         <h2>Primary and Higher Education <span>2005-2019</span></h2>
-                        <p>I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with 91 merit. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem and also my mathematical skills to actually solve the problems.</p> 
+                        <p>I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with 91 merit. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem and also my mathematical skills to actually solve the problems.</p>
                       </div>
                     </div>
                   </article>

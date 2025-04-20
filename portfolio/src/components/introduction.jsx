@@ -1,61 +1,61 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade'; 
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-export default class Introduction extends Component {
-  render() {
-    return (
-      <div>
-        <section id="colorlib-hero" className="js-fullheight" data-section="home">
-          <div className="flexslider js-fullheight">
-            <ul className="slides">
-              <li style={{backgroundImage: 'url(images/img-bg.jpg)'}}>
-                <div className="overlay" />
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                      <div className="slider-text-inner js-fullheight">
-                        <div className="desc">
-                          <h1>Hello! <br />I'm Hazel</h1>
-                          <p><a className="btn btn-primary btn-learn" href="https://drive.google.com/file/d/1TiZCMu1PcBgS3FjKGjE4Yj_gpou1qnWJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my CV<i className="icon-download4" /></a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li style={{backgroundImage: 'url(images/img-bg.jpg)'}}>
-                <div className="overlay" />
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                      <div className="slider-text-inner">
-                        <div className="desc">
-                          <h1>I like programming<br />systems!</h1>
-                          <p><a className="btn btn-primary btn-learn" href="https://drive.google.com/drive/folders/10pKVtrHiR2vzPq8KNGMeSg-g-acXyMIh?usp=sharing" target="_blank" rel="noopener noreferrer">View My Projects <i className="icon-briefcase3" /></a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li style={{backgroundImage: 'url(images/img-bg.jpg)'}}>
-                <div className="overlay" />
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                      <div className="slider-text-inner">
-                        <div className="desc">
-                          <h1>I have <br/>experience in..</h1>
-                          <p><a className="btn btn-primary btn-learn" href="#about" data-nav-section="about">View Experince <i className="icon-book" /></a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+const Introduction = () => {
+  return (
+    <div className="w-full h-screen flex flex-col justify-center items-center"> 
+      <Swiper
+        modules={[Pagination, Autoplay, EffectFade]}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        loop={true}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        className="w-full h-full"
+      >
+
+        {/* Slide 1 */}
+        <SwiperSlide>
+          <div className="w-full h-full flex flex-col justify-center items-center text-center">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-gray-800 mb-8">
+              Hello! I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Hazel</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-2xl">
+              I'm passionate about programming systems and creating elegant solutions.
+            </p>
           </div>
-        </section>
-      </div>
-    )
-  }
-}
+        </SwiperSlide>
+
+        {/* Slide 2 */}
+        <SwiperSlide>
+          <div className="w-full h-full flex flex-col justify-center items-center text-center">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-gray-800 mb-8">
+              Welcome to my <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">Portfolio</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-2xl">
+              Explore my projects and achievements.
+            </p>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 3 */}
+        <SwiperSlide>
+          <div className="w-full h-full flex flex-col justify-center items-center text-center">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-gray-800 mb-8">
+              Let's <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Collaborate</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-2xl">
+              Feel free to reach out for exciting opportunities.
+            </p>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+};
+
+export default Introduction;
